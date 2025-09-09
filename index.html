@@ -7,53 +7,55 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
+
+  <header role="banner">
     <h1 class="logo">MANACO</h1>
-    <nav>
+    <nav aria-label="Navegación principal">
       <ul>
-        <li><a href="#">Inicio</a></li>
+        <li><a href="#" aria-current="page">Inicio</a></li>
         <li><a href="#">Servicios</a></li>
         <li><a href="#">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section class="seccion_uno">
-      <h2 class="principal">Calzado que impulsa tu paso</h2>
+  <main id="contenido" role="main">
+    <section class="seccion_uno" aria-labelledby="eslogan">
+      <h2 id="eslogan" class="principal">Calzado que impulsa tu paso</h2>
     </section>
 
-    <section class="seccion_dos">
-      <h2 class="Nuestros">Nuestros Productos</h2>
+    <section class="seccion_dos" aria-labelledby="productos">
+      <h2 id="productos" class="Nuestros">Nuestros Productos</h2>
       <ul>
         <li>
-          <article>
-            <img src="img/z1.jpg" alt="Calzado deportivo modelo 1">
-            <h3>Producto 1</h3>
-            <p>$00.00</p>
-            <button>Comprar</button>
+          <article role="article" aria-labelledby="p1-title">
+            <img src="img/z1.jpg" alt="Calzado modelo 1">
+            <h3 id="p1-title">Producto 1</h3>
+            <p aria-label="Precio del producto uno">$00.00</p>
+            <button type="button" aria-label="Comprar producto 1">Comprar</button>
           </article>
         </li>
         <li>
-          <article>
-            <img src="img/z2.jpg" alt="Calzado deportivo modelo 2">
-            <h3>Producto 2</h3>
-            <p>$00.00</p>
-            <button>Comprar</button>
+          <article role="article" aria-labelledby="p2-title">
+            <img src="img/z2.jpg" alt="Calzado modelo 2">
+            <h3 id="p2-title">Producto 2</h3>
+            <p aria-label="Precio del producto dos">$00.00</p>
+            <button type="button" aria-label="Comprar producto 2">Comprar</button>
           </article>
         </li>
         <li>
-          <article>
-            <img src="img/z3.jpg" alt="Calzado deportivo modelo 3">
-            <h3>Producto 3</h3>
-            <p>$00.00</p>
-            <button>Comprar</button>
+          <article role="article" aria-labelledby="p3-title">
+            <img src="img/z3.jpg" alt="Calzado modelo 3">
+            <h3 id="p3-title">Producto 3</h3>
+            <p aria-label="Precio del producto tres">$00.00</p>
+            <button type="button" aria-label="Comprar producto 3">Comprar</button>
           </article>
         </li>
       </ul>
     </section>
   </main>
-  <footer>
+
+  <footer role="contentinfo">
     <p>© 2025 MANACO</p>
   </footer>
 </body>
