@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  border: 3px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+header h1 {
+  font-family: sans-serif;
+  font-size: 40px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+}
+
+main {
+  border: 3px solid black;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.seccion_uno {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.principal {
+  font-size: 50px;
+  font-family: sans-serif;
+  width: 80%;
+  height: 400px;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+}
+.Nuestros{
+      text-align: center;
+
+}
+.seccion_dos {
+  text-align: left;
+}
+
+.seccion_dos h2 {
+  margin-bottom: 2rem;
+  font-family: sans-serif;
+}
+
+.seccion_dos ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  list-style: none;
+  padding: 0;
+}
+
+.seccion_dos li {
+  flex: 1;
+  max-width: 250px;
+  margin: 0 1rem;
+}
+
+article {
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+  border: 2px solid black;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border-top: 3px solid black;
+  font-family: sans-serif;
+}
+button{
+    margin: 5px;
+    border-radius: 10px;
+    height: 40px;
+    width: 100%;
+}
