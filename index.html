@@ -3,14 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MANACO</title>
+  <title>MANACO - Calzado de calidad</title>
+  <meta name="description" content="Descubre los mejores calzados deportivos de MANACO: estilo, comodidad y calidad. Compra ahora tus productos favoritos.">
+  
+  <meta property="og:title" content="MANACO - Calzado deportivo de calidad">
+  <meta property="og:description" content="Descubre los mejores calzados deportivos de MANACO: estilo, comodidad y calidad. Compra ahora tus productos favoritos.">
+  <meta property="og:image" content="img/placeholder.jpg">
+
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+  <a href="#contenido" class="skip-link">Saltar al contenido principal</a>
+
   <header role="banner">
     <h1 class="logo">MANACO</h1>
     <nav aria-label="Navegación principal">
+      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
       <ul>
         <li><a href="#" aria-current="page">Inicio</a></li>
         <li><a href="#">Servicios</a></li>
@@ -25,30 +34,36 @@
     </section>
 
     <section class="seccion_dos" aria-labelledby="productos">
-      <h2 id="productos" class="Nuestros">Nuestros Productos</h2>
+      <h2 id="productos" class="Nuestros">Productos</h2>
       <ul>
         <li>
           <article role="article" aria-labelledby="p1-title">
             <img src="img/z1.jpg" alt="Calzado modelo 1">
-            <h3 id="p1-title">Producto 1</h3>
-            <p aria-label="Precio del producto uno">$00.00</p>
-            <button type="button" aria-label="Comprar producto 1">Comprar</button>
+            <div class="info">
+              <h3 id="p1-title">Producto 1</h3>
+              <p aria-label="Precio del producto uno">$00.00</p>
+              <button type="button" aria-label="Comprar producto 1">Comprar</button>
+            </div>
           </article>
         </li>
         <li>
           <article role="article" aria-labelledby="p2-title">
             <img src="img/z2.jpg" alt="Calzado modelo 2">
-            <h3 id="p2-title">Producto 2</h3>
-            <p aria-label="Precio del producto dos">$00.00</p>
-            <button type="button" aria-label="Comprar producto 2">Comprar</button>
+            <div class="info">
+              <h3 id="p2-title">Producto 2</h3>
+              <p aria-label="Precio del producto dos">$00.00</p>
+              <button type="button" aria-label="Comprar producto 2">Comprar</button>
+            </div>
           </article>
         </li>
         <li>
           <article role="article" aria-labelledby="p3-title">
             <img src="img/z3.jpg" alt="Calzado modelo 3">
-            <h3 id="p3-title">Producto 3</h3>
-            <p aria-label="Precio del producto tres">$00.00</p>
-            <button type="button" aria-label="Comprar producto 3">Comprar</button>
+            <div class="info">
+              <h3 id="p3-title">Producto 3</h3>
+              <p aria-label="Precio del producto tres">$00.00</p>
+              <button type="button" aria-label="Comprar producto 3">Comprar</button>
+            </div>
           </article>
         </li>
       </ul>
@@ -56,7 +71,16 @@
   </main>
 
   <footer role="contentinfo">
-    <p>© 2025 MANACO</p>
+    <p>Copyright 2025 MANACO</p>
   </footer>
+
+  <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const menu = document.querySelector("nav ul");
+
+    toggle.addEventListener("click", () => {
+      menu.classList.toggle("active");
+    });
+  </script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-* {
+* { 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -57,10 +57,11 @@ main {
   border-radius: 10px;
   text-align: center;
 }
-.Nuestros{
-      text-align: center;
 
+.Nuestros {
+  text-align: center;
 }
+
 .seccion_dos {
   text-align: left;
 }
@@ -105,11 +106,12 @@ footer {
   border-top: 3px solid black;
   font-family: sans-serif;
 }
-button{
-    margin: 5px;
-    border-radius: 10px;
-    height: 40px;
-    width: 100%;
+
+button {
+  margin: 5px 0 0 0;
+  border-radius: 10px;
+  height: 40px;
+  width: 100%;
 }
 
 a:focus,
@@ -133,3 +135,109 @@ button:focus {
   top: 0; 
 }
 
+
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* --- Versión móvil --- */
+@media(max-width: 600px) {
+  .seccion_uno {
+    display: none;
+  }
+  
+  header h1 {
+    font-family: sans-serif;
+    font-size: 40px;
+    color: red;
+  }
+  
+  .Nuestros {
+    text-align: left;
+    margin-left: 1rem;
+  }
+
+  .seccion_dos ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+    padding: 0 1rem;
+  }
+
+  .seccion_dos li {
+    margin: 0;
+  }
+
+  article {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    border: 2px solid black;
+    padding: 0.75rem;
+    border-radius: 8px;
+    gap: 1rem;
+    width: 80%;   
+    margin: 0 auto;  
+  }
+
+  article img {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    border: 2px solid black;
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+
+  article .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    flex: 1;   
+  }
+
+  article h3, article p {
+    margin: 0;
+    text-align: left;
+  }
+
+  article button {
+    width: 100%;
+    max-width: 150px;     
+    height: 35px;
+  }
+
+  footer {
+    color: blue;
+  }
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 1rem;
+    gap: 1rem;
+    width: 200px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+}
